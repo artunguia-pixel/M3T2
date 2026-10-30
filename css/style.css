@@ -60,3 +60,41 @@ h3 { font-size: var(--text-lg); }
 p {
   margin-bottom: var(--space-md);
 }
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+nav {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-weight: 600;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--space-xs);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover State */
+nav a:hover {
+  color: var(--color-primary);
+  background-color: var(--color-background);
+}
+
+/* Focus State */
+nav a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+  color: var(--color-primary-hover);
+}
